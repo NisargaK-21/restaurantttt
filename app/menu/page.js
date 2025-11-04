@@ -1,12 +1,44 @@
 "use client";
-import React, { useRef } from "react";
+import React from 'react';
+import { useState } from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import { useRouter } from 'next/navigation';
 import Button from "../components/button";
 
+
+
+
 export default function MenuPage() {
-   
+    const[page,setPage]=useState(0);
+
+    const feedback =[
+        {
+           rating: 5,
+           title: "Awesome and delicious food",
+           text: "Breaking consultation discover apartments. Indulgence off under folly death wrote cause her way spite.",
+           name: "Istiak Ahmed",
+           role: "MARKETING MANAGER",  
+        },
+        {
+           rating: 5,
+           title: "A wonderful dining experience",
+           text: "Everything from presentation to flavor was perfect. Service was attentive and the ambience calming.",
+           name: "Maria Johnson",
+           role: "FOOD CRITIC",
+        },
+        {
+           rating: 5,
+           title: "Best food in town!",
+           text: "Absolutely loved it! The spices, freshness, and service all made this an unforgettable experience.",
+           name: "Arjun Mehta",
+           role: "CHEF CONSULTANT",
+        }
+    ]
+    
+    const handleNext=()=>setPage((page+1)%feedback.length);
+    const handlePrev=()=>setPage((page-1+feedback.length)%feedback.length);
+
     return (
     <div className="font-serif">
         <Header/>
@@ -61,7 +93,6 @@ export default function MenuPage() {
                    </div>
                </div>
                <br/>
-
 
                <div className=" flex flex-row">
                    <img 
@@ -545,13 +576,9 @@ export default function MenuPage() {
             </div>
         </div>
 
-        <div className="bg-[#EAE8E5] mt-30">
-         <img 
-         className="w-[150px] h-[120px] opacity-20 ml-20 mt-10"
-         src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Fshape%2F5.png&w=1920&q=75"/>
-        </div>
-
-         
+<div>
+    
+</div>
         <Footer />
     </div>
     )
