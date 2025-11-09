@@ -1,5 +1,4 @@
 "use client";
-import React, { useRef } from "react";
 import Button from './button';
 import { useRouter } from 'next/navigation';
 import { useState } from "react";
@@ -473,8 +472,6 @@ export default function Menu() {
   
       const categories = [...new Set(menu.map((item) => item.category))];
   
-      const sectionRefs = useRef({});
-  
     const handleAddToCart = () => {
       setCart(cart + 1);
     }
@@ -493,65 +490,50 @@ export default function Menu() {
         }
       }
   
-    const scrollToCategory = (category) => {
-      setActiveCategory(category);
-      sectionRefs.current[category]?.scrollIntoView({ behavior: "smooth", block: "start" });
-    };
   
   return (
-     <div>
+     <div className="px-4 md:px-8 lg:px-16 font-serif min-h-screen w-full h-auto">
  
-       <div className="flex flex-col sm:flex-row justify-between items-center mx-5 mt-5 mb-8 gap-4 ml-120">
-         <div className="flex flex-wrap justify-center gap-3">
+       <div className="flex lg:flex-row flex-wrap sm:flex-col md:flex-col justify-between items-center mt-6 mb-10 ">
+         <div className=" justify-center ">
            {categories.map((e) => (
              <button
                key={e}
-               onClick={() => scrollToCategory(e)}
-               className={`px-4 py-2 rounded-lg font-semibold border transition-all duration-300 ${
-                 activeCategory === e
-                   ? "bg-[#8b6b3b] text-white border-[#8b6b3b]"
-                   : "bg-white text-black border-gray-400 dark:bg-gray-700 dark:text-white"
-               } hover:bg-[#c2a676] hover:text-white`}
-             >
+               onClick={() => setActiveCategory(e)}
+               className="px-4 py-2 rounded-lg font-semibold border bg-white text-black border-gray-400 dark:bg-gray-700 dark:text-white hover:bg-[#c2a676] hover:text-white">
                {e}
              </button>
            ))}
          </div>
  
-         <div className="flex items-center gap-4 mt-3 sm:mt-0">
-           <div className="flex items-center gap-2 text-2xl font-bold font-serif">
-             <span className="text-red-900" >Cart: {cart}</span>
-           </div>
- 
+         <div className="flex items-center gap-4">          
+           <div className="text-lg md:text-xl font-bold text-red-900" >Cart: {cart}</div>
            <Button label="Place Order" onClick={handlePlaceOrder} />
          </div>
        </div>
  
  
-         <div className="bg-white/10 backdrop-blur-sm shadow-lg flex flex-row flex-wrap mt-10 px-5 py-7 gap-12 mx-auto rounded-xl justify-center items-center dark:bg-gray-900 font-serif">
-         {categories.map((category,index)=>(
-             <div key={index} ref={(el) => sectionRefs.current[category] = el} className="mb-10 w-full">
-               <h2 className="text-3xl text-center mb-5 mt-10 text-[#374151] dark:text-white">{category} Menu</h2>
-               <hr className="mb-8"/>         
-             <div className="flex flex-row flex-wrap justify-center gap-8 mt-5">
-               {menu.filter((item)=>item.category===category).map((item)=>(
-                 
-             <div key={item.id} className="hover:scale-105 ease-in-out duration-300 w-[350px] h-auto mx-4 mb-8 flex flex-col items-center gap-4 rounded-xl bg-white p-5 shadow-lg outline outline-black/5 dark:bg-slate-800 dark:shadow-none dark:-outline-offset-1 dark:outline-white/10"> 
-             <h3 className="text-xl font-semibold text-center">{item.name}</h3>
-             <img className="w-[300px] h-[300px] rounded-2xl object-cover" src={item.image} alt={item.name} />
-             <div className="flex justify-between w-full px-4 my-2">
-               <p className="font-medium">Rating: {item.rating}/10</p>
-               <p className="font-medium">Rs.{item.price}</p>
-             </div>
-             <div className="flex gap-4 mt-2">
-               <Button label="Add to cart" onClick={handleAddToCart} />
-               <Button label="Remove" onClick={handleRemoveFromCart} />
-             </div>
-             </div>
-         ))}
+         <div className=" bg-white dark:bg-gray-900 shadow-lg rounded-xl px-4 sm:px-8 py-8 space-y-4 sm:space-y-8 md:space-y-0 lg:space-y-0 justify-center items-center">
+         <hr/>
+         <div className="flex lg:flex-row flex-wrap sm:flex-col md:flex-col space-x-4 space-y-5 mt-10">
+            {(activeCategory ? menu.filter((item)=>
+            item.category === activeCategory):menu).map((item)=>(
+              <div key={item.id} className="w-[450px] sm:w-[280px] md:w-[320px] lg:w-[400px] hover:scale-105 transition-transform duration-300 bg-white dark:bg-slate-800 shadow-lg dark:shadow-none rounded-xl p-5 flex flex-col items-center">
+                <h3 className="text-lg md:text-xl font-semibold text-center mb-2">{item.name}</h3>
+                <img src={item.image}
+                className="w-full h-[220px] sm:h-[260px] md:h-[300px] object-cover rounded-2xl"
+                />
+                <div className="flex justify-between w-full px-2 mt-3 text-sm md:text-base">
+                  <p>Rating: {item.rating}/10</p>
+                  <p>Rs.{item.price}</p>
+                </div>
+                <div>
+                  <Button label="Add to cart" onClick={handleAddToCart} />
+                  <Button label="Remove" onClick={handleRemoveFromCart} />
+                </div>
+              </div>
+            ))}
          </div>
-         </div>
-         ))}
          </div>
      </div>
   );
