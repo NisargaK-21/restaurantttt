@@ -135,7 +135,9 @@ export default function Home() {
         Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff. 
         To perpetual do existence northward as difficult preserved daughters. Continued at up to zealously necessary.
       </p>
-      <Button label="Order Today" />
+      <Button 
+      onClick={() => router.push('/menu')}
+      label="Order Today" />
     </div>
   </div>
 </div>

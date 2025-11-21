@@ -58,54 +58,7 @@ export default function Menu() {
       price: 260,
       category: "Veg"
     },
-    {
-      id: 7,
-      name: "Vegetable Lasagna Rolls",
-      image: "https://media.istockphoto.com/id/508652097/photo/spinach-and-ricotta-lasagna.jpg?s=612x612&w=0&k=20&c=LABDGg0Mg2Tvk1yBphUUrYAC6CXczKKPxksdKk1dlb8=",
-      rating: 9.0,
-      price: 280,
-      category: "Veg"
-    },
-    {
-      id: 8,
-      name: "Creamy Pesto Pasta",
-      image: "https://thumbs.dreamstime.com/b/italian-stills-pasta-pesto-genovese-vegetarian-gray-table-green-background-34322286.jpg",
-      rating: 8.9,
-      price: 260,
-      category: "Veg"
-    },
-    {
-      id: 9,
-      name: "Roasted Veggie Grain Bowl",
-      image: "https://pinchofyum.com/wp-content/uploads/Winter-Grain-Bowl.jpg",
-      rating: 9.3,
-      price: 250,
-      category: "Veg"
-    },
-    {
-      id: 10,
-      name: "Coconut Lemongrass Rice Bowl",
-      image: "https://www.lotusfoods.com/cdn/shop/files/Coconut_Lemongrass_Broth_with_Forbidden_Rice_03_800x.jpg?v=1664550484",
-      rating: 8.6,
-      price: 230,
-      category: "Veg"
-    },
-    {
-      id: 11,
-      name: "Smoked Paneer Steak",
-      image: "https://www.chenabgourmet.com/wp-content/uploads/2021/09/Paneer-Steak-Recipe-Sear-the-Paneer-1024x683.png",
-      rating: 9.4,
-      price: 290,
-      category: "Veg"
-    },
-    {
-      id: 12,
-      name: "Zucchini Noodle Stir-Fry",
-      image: "https://www.tablefortwoblog.com/wp-content/uploads/2015/09/zoodle-stir-fry-tablefortwoblog-5.jpg",
-      rating: 8.8,
-      price: 220,
-      category: "Veg"
-    },
+  
     {
       id: 13,
       name: "Grilled Lemon Herb Chicken with Asparagus",
@@ -152,54 +105,6 @@ export default function Menu() {
       image: "https://www.recipetineats.com/tachyon/2018/04/Fish-with-Lemon-Butter-Sauce.jpg",
       rating: 9.0,
       price: 370,
-      category: "Non-Veg"
-    },
-    {
-      id: 19,
-      name: "Chicken Biryani-Dum Style",
-      image: "https://www.shutterstock.com/image-photo/traditional-chicken-biryani-served-brass-600nw-2622739739.jpg",
-      rating: 9.5,
-      price: 280,
-      category: "Non-Veg"
-    },
-    {
-      id: 20,
-      name: "Grilled Shrimp Skewers with Couscous Salad",
-      image: "https://www.tasteofhome.com/wp-content/uploads/2017/09/Lemon-Basil-Grilled-Shrimp-Couscous_exps72137_TH143192B02_07_8bC_RMS.jpg",
-      rating: 9.1,
-      price: 360,
-      category: "Non-Veg"
-    },
-    {
-      id: 21,
-      name: "Roasted Lamb Chops with Garlic Mashed Potatoes",
-      image: "https://images.getrecipekit.com/20240419204520-primalkitchen_blog_lambchopsbbq_01.jpg?aspect_ratio=16:9&quality=90&",
-      rating: 9.3,
-      price: 480,
-      category: "Non-Veg"
-    },
-    {
-      id: 22,
-      name: "Thai Basil Chicken with Jasmine Rice",
-      image: "https://spicecravings.com/wp-content/uploads/2020/11/Thai-Basil-Chicken-4.jpg",
-      rating: 9.0,
-      price: 300,
-      category: "Non-Veg"
-    },
-    {
-      id: 23,
-      name: "Butter Chicken with Naan",
-      image: "https://media.istockphoto.com/id/1331450225/photo/butter-chicken-with-naan-bread.jpg?s=612x612&w=0&k=20&c=u6Z3_j0sXhrsTJfTGYLamKW16JDAXup4zmqeFras9Ls=",
-      rating: 9.4,
-      price: 310,
-      category: "Non-Veg"
-    },
-    {
-      id: 24,
-      name: "Pan-Seared Tuna Steak with Avocado Salsa",
-      image: "https://dishingouthealth.com/wp-content/uploads/2018/06/TunaAvoVerde3.jpg",
-      rating: 9.2,
-      price: 450,
       category: "Non-Veg"
     },
   
@@ -251,30 +156,7 @@ export default function Menu() {
       price: 160,
       category: "Beverages"
     },
-    {
-      id: 31,
-      name: "Classic Mojito",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmi4s3mUdv26MT6zb-gnTuxas5WNypj9v-lQ&s",
-      rating: 9.1,
-      price: 140,
-      category: "Beverages"
-    },
-    {
-      id: 32,
-      name: "Blue Lagoon Mocktail",
-      image: "https://img.freepik.com/free-photo/front-view-fresh-cool-lemonade-inside-little-glass-with-ice-blue-background-water-cold-juice-cocktail-color-bar-drink-fruit_140725-157069.jpg?semt=ais_hybrid&w=740&q=80",
-      rating: 9.3,
-      price: 150,
-      category: "Beverages"
-    },
-    {
-      id: 34,
-      name: "Vanilla Frappe",
-      image: "https://i.shgcdn.com/c6a775cc-80a6-4de7-a21a-909f7e040ce4/-/format/auto/-/preview/3000x3000/-/quality/lighter/",
-      rating: 9.0,
-      price: 180,
-      category: "Beverages"
-    },
+    
       {
       id: 35,
       name: "Chocolate Lava Cake",
@@ -323,54 +205,7 @@ export default function Menu() {
       price: 160,
       category: "Desserts"
     },
-    {
-      id: 41,
-      name: "Caramel Pudding",
-      image: "https://media.istockphoto.com/id/139483187/photo/creme-caramel-on-wood-table.jpg?s=612x612&w=0&k=20&c=df1dOJqGVWzKCkbPrYLa0kBlZawb8Fo63MIvmkq_quI=",
-      rating: 8.8,
-      price: 150,
-      category: "Desserts"
-    },
-    {
-      id: 42,
-      name: "Strawberry Shortcake",
-      image: "https://www.allrecipes.com/thmb/0kfzN0CBam7vTnAnWXpvoFIY2e8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/8201-strawberry-shortcake-ddmfs-5775-hero-3x4-47272b202c594de0a4221f3a7cab4087.jpg",
-      rating: 9.3,
-      price: 220,
-      category: "Desserts"
-    },
-    {
-      id: 43,
-      name: "Mango Mousse Delight",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm8uOsJ9LDxA18L7bkpW3B94S21go5kGcEfQ&s",
-      rating: 9.0,
-      price: 190,
-      category: "Desserts"
-    },
-    {
-      id: 44,
-      name: "Brownie Sundae",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDNP2Ay2al7yMIQM1DBFvf-KZ9NJAT8kEbxA&s",
-      rating: 9.2,
-      price: 210,
-      category: "Desserts"
-    },
-    {
-      id: 45,
-      name: "Rose Phirni",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTozxnDlaIyldibIIvdVnx7rYUTy1kQHVtqlw&s",
-      rating: 8.9,
-      price: 170,
-      category: "Desserts"
-    },
-    {
-      id: 46,
-      name: "Dark Chocolate Truffle",
-      image: "https://www.eatloveeats.com/wp-content/uploads/2022/02/Raspberry-Dark-Chocolate-Truffles-Featured.jpg",
-      rating: 9.5,
-      price: 230,
-      category: "Desserts"
-    },
+    
       {
       id: 47,
       name: "Loaded Nachos with Cheese Dip",
@@ -418,59 +253,12 @@ export default function Menu() {
       rating: 9.3,
       price: 190,
       category: "Snacks"
-    },
-    {
-      id: 53,
-      name: "Mini Samosa Platter",
-      image: "https://chandravilas.com/wp-content/uploads/2022/09/mini-Samosa.jpg",
-      rating: 9.0,
-      price: 140,
-      category: "Snacks"
-    },
-    {
-      id: 54,
-      name: "Crispy Onion Rings",
-      image: "https://media.istockphoto.com/id/533423341/photo/crispy-onion-rings-close-up.jpg?s=612x612&w=0&k=20&c=Uplc8ZTYUuriyWoySj4VDE_Bs4t8luQXqWzl9wI4k1Y=",
-      rating: 8.9,
-      price: 120,
-      category: "Snacks"
-    },
-    {
-      id: 55,
-      name: "Corn Cheese Balls",
-      image: "https://images.archanaskitchen.com/images/recipes/world-recipes/continental-party-appetizer-starter-recipes/Corn_cheese_balls_3fb43f099d.jpg",
-      rating: 9.1,
-      price: 160,
-      category: "Snacks"
-    },
-    {
-      id: 56,
-      name: "Tandoori Aloo Tikka",
-      image: "https://carveyourcraving.com/wp-content/uploads/2020/10/air-fryer-achari-aloo-tikka.jpg",
-      rating: 9.2,
-      price: 170,
-      category: "Snacks"
-    },
-    {
-      id: 57,
-      name: "Veg Puff Pastry",
-      image: "https://www.thesugarandspice.com/cdn/shop/files/CopyofLSD07524.png?v=1741764906",
-      rating: 8.8,
-      price: 130,
-      category: "Snacks"
-    },
-    {
-      id: 58,
-      name: "Classic Bruschetta",
-      image: "https://media.istockphoto.com/id/481765835/photo/homemade-italian-bruschetta-appetizer.jpg?s=612x612&w=0&k=20&c=20lme_vcpR4R2wfNyAFwvglvSj3mxJU9qel00LqzP3I=",
-      rating: 9.4,
-      price: 180,
-      category: "Snacks"
     }
+    
         
       ]
   
-      const categories = [...new Set(menu.map((item) => item.category))];
+
   
     const handleAddToCart = () => {
       setCart(cart + 1);
@@ -486,7 +274,7 @@ export default function Menu() {
         if(cart===0){
           alert("Your cart is empty. Please add items to the cart before placing an order.");
         }else{
-          router.push('/orderconfirmation');
+          alert("Your order has been placed successfully!");
         }
       }
   
@@ -495,16 +283,7 @@ export default function Menu() {
      <div className="px-4 md:px-8 lg:px-16 font-serif min-h-screen w-full h-auto">
  
        <div className="flex lg:flex-row flex-wrap sm:flex-col md:flex-col justify-between items-center mt-6 mb-10 ">
-         <div className=" justify-center ">
-           {categories.map((e) => (
-             <button
-               key={e}
-               onClick={() => setActiveCategory(e)}
-               className="px-4 py-2 rounded-lg font-semibold border bg-white text-black border-gray-400 dark:bg-gray-700 dark:text-white hover:bg-[#c2a676] hover:text-white">
-               {e}
-             </button>
-           ))}
-         </div>
+        
  
          <div className="flex items-center gap-4">          
            <div className="text-lg md:text-xl font-bold text-red-900" >Cart: {cart}</div>
@@ -516,8 +295,7 @@ export default function Menu() {
          <div className=" bg-white dark:bg-gray-900 shadow-lg rounded-xl px-4 sm:px-8 py-8 space-y-4 sm:space-y-8 md:space-y-0 lg:space-y-0 justify-center items-center">
          <hr/>
          <div className="flex lg:flex-row flex-wrap sm:flex-col md:flex-col space-x-4 space-y-5 mt-10">
-            {(activeCategory ? menu.filter((item)=>
-            item.category === activeCategory):menu).map((item)=>(
+            {menu.map((item)=>(
               <div key={item.id} className="w-[450px] sm:w-[280px] md:w-[320px] lg:w-[400px] hover:scale-105 transition-transform duration-300 bg-white dark:bg-slate-800 shadow-lg dark:shadow-none rounded-xl p-5 flex flex-col items-center">
                 <h3 className="text-lg md:text-xl font-semibold text-center mb-2">{item.name}</h3>
                 <img src={item.image}

@@ -34,6 +34,8 @@ export default function Header() {
         <Link href="/about_us" className="text-white hover:text-[#c2a676] hover:underline transition-all">About us</Link>
         <Link href="/menu" className="text-white hover:text-[#c2a676] hover:underline transition-all">Menu</Link>
         <Link href="/chef" className="text-white hover:text-[#c2a676] hover:underline transition-all">Chef</Link>
+        <Link href="/login" className="text-white hover:text-[#c2a676] hover:underline transition-all">Login</Link>
+
        </nav>
       </div>
 
