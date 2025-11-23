@@ -39,7 +39,7 @@ export default function LoginPage() {
 
   return (  
     <div className="bg-white/10 dark:bg-black min-h-screen font-serif">
-      <Header />
+
       <Hero title="Login Page" subtitle="Home--login"/>
 
 <div className="flex flex-col lg:flex-row items-center justify-center ml-4 mr-4 mt-10 p-6 lg:ml-25 lg:mr-10 lg:mt-15 lg:p-20">
@@ -103,7 +103,7 @@ export default function LoginPage() {
   </div>
 </div>
 
-      <Footer />
+
     </div>
   );
 }

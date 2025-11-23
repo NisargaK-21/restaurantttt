@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <div className="dark:bg-gray-800 min-h-screen text-white font-serif">
       <div className="w-full min-h-[700px] md:h-[900px] bg-[url('https://www.creativefabrica.com/wp-content/uploads/2024/01/08/Dark-Aesthetic-Restaurant-Hyper-Realistic-Graphic-88083936-1.png')] bg-cover bg-center">
-      <Header />
+
 
       <div className="flex flex-col justify-center items-center text-center px-4">
         <h1 className="text-4xl sm:text-6xl md:txt-8xl font-serif mt-20">Best Restaurant</h1>
@@ -214,7 +214,7 @@ export default function Home() {
 
 
 
-      <Footer />
+
       
     </div>
   );

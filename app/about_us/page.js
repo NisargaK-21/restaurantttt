@@ -11,7 +11,6 @@ import Button from "../components/button";
 export default function AboutUs() {
     return(
                 <div className="font-serif space-x-1">
-                   <Header/>
                    <Hero title="About us" subtitle="Home--About us"/>
 
                    <div className="flex flex-col justify-center items-center w-full h-[350px] md:h-[450px] bg-cover bg-center bg-no-repeat relative bg-[#F3F1ED]">
@@ -71,7 +70,6 @@ export default function AboutUs() {
 
                    <RestanVedio/>
 
-                   <Footer/>
                 </div>             
     )
 }

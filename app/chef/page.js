@@ -8,11 +8,13 @@ import Hero from '../components/hero';
 export default function ChefPage() {
     return(
         <div>
-           <Header/>
            <Hero title="Restaurant Chef" subtitle=" Home--chef"/>
            <Chef/>
-           <div className='flex flex-row bg-white w-full h-auto p-20 space-x-20'>
-             <div className="flex flex-col items-center transition-all duration-500 group ml-35">
+    <div className="bg-gray-100 border border-black flex flex-col justify-center items-center min-h-[700px] py-10 px-5">
+    <div className="flex flex-wrap justify-center gap-10 sm:gap-16 lg:gap-20 mt-10">
+
+
+       <div className="flex flex-col items-center transition-all duration-500 group">
         <div className="relative w-[220px] h-[220px] sm:w-[260px] sm:h-[260px] lg:w-[300px] lg:h-[300px] rounded-full border-4 border-gray-400 flex justify-center items-center overflow-hidden transition-all duration-500 group-hover:border-[#7b6332] mt-10">
          <img 
          className="object-cover w-full h-full rounded-full"
@@ -89,8 +91,10 @@ export default function ChefPage() {
           <p className="font-bold text-md">Main Chef</p>
         </div>
        </div>
-           </div>
-           <Footer/>
+       
+    </div>
+
+  </div>
         </div>
     )
 }

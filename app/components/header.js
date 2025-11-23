@@ -1,10 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
+import Button from "./button";
 
 
 export default function Header() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="w-full font-serif">
 
@@ -27,9 +29,13 @@ export default function Header() {
         <img
          className=" h-10 w-auto" 
          src="https://restan-nextjs.vercel.app/_next/image?url=%2Fassets%2Fimg%2Flogo-light.png&w=1920&q=75"/>
+       
+
+      <Button className="sm:hidden text-white text-[30px] text:w-10 h-10"
+      onClick={()=>setIsOpen(!isOpen)} label={'☰'} />
        </div>
        
-       <nav className="flex flex-wrap gap-6 justify-center text-lg font-medium ">
+       <nav className="flex flex-wrap hidden lg:flex gap-6 justify-center text-lg font-medium ">
         <Link href="/" className="text-white hover:text-[#c2a676] hover:underline transition-all">Home</Link>
         <Link href="/about_us" className="text-white hover:text-[#c2a676] hover:underline transition-all">About us</Link>
         <Link href="/menu" className="text-white hover:text-[#c2a676] hover:underline transition-all">Menu</Link>
@@ -38,6 +44,16 @@ export default function Header() {
 
        </nav>
       </div>
+
+      {isOpen && (
+        <div className="bg-black text-white flex flex-col items-start px-[24px] py-[12px] gap-[16px] text-[18px]">
+          <Link href="/" onClick={() => setMenuOpen(false)}>Home</Link>
+          <Link href="/about_us" onClick={() => setMenuOpen(false)}>About us</Link>
+          <Link href="/menu" onClick={() => setMenuOpen(false)}>Menu</Link>
+          <Link href="/chef" onClick={() => setMenuOpen(false)}>Chef</Link>
+          <Link href="/login" onClick={() => setMenuOpen(false)}>Login</Link>
+        </div>
+      )}
 
 
     </div>

@@ -7,7 +7,7 @@ import { useState } from "react";
 export default function Menu() {
    const router = useRouter();
       const [cart, setCart] = useState(0);
-      const [activeCategory, setActiveCategory] = useState("");
+
   
       const menu=[
           {
