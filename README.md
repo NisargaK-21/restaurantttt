@@ -23,6 +23,41 @@ app/          -> Pages & sections (App Router)
 components/   -> UI components
 public/       -> Images & assets
 
+Folder Structure
+root/
+│
+├─ app/
+│   ├─ about_us/
+│   ├─ chef/
+│   │   ├─ components/
+│   │   │   ├─ button.js
+│   │   │   ├─ chef.js
+│   │   │   ├─ footer.js
+│   │   │   ├─ header.js
+│   │   │   ├─ hero.js
+│   │   │   └─ menu1.js
+│   │   ├─ restan_vedio.js
+│   │   └─ page.js
+│   │
+│   ├─ login/
+│   │   └─ page.js
+│   │
+│   ├─ menu/
+│   │   └─ page.js
+│   │
+│   ├─ auth.js
+│   ├─ authContext.js
+│   ├─ layout.js
+│   └─ page.js
+│
+├─ public/
+├─ firebase.js
+├─ globals.css
+├─ next.config.mjs
+├─ postcss.config.mjs
+├─ package.json
+└─ README.md
+
 Screenshots
 <img width="1899" height="913" alt="landing page" src="https://github.com/user-attachments/assets/35e0799c-3532-4f61-b9a9-f0936a4bbae1" />
 <img width="1887" height="918" alt="menu" src="https://github.com/user-attachments/assets/c9f325b0-7663-4e4c-9738-db2395575913" />
