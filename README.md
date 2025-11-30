@@ -24,39 +24,44 @@ components/   -> UI components
 public/       -> Images & assets
 
 Folder Structure
-root/
-│
-├─ app/
-│   ├─ about_us/
-│   ├─ chef/
-│   │   ├─ components/
-│   │   │   ├─ button.js
-│   │   │   ├─ chef.js
-│   │   │   ├─ footer.js
-│   │   │   ├─ header.js
-│   │   │   ├─ hero.js
-│   │   │   └─ menu1.js
-│   │   ├─ restan_vedio.js
-│   │   └─ page.js
-│   │
-│   ├─ login/
-│   │   └─ page.js
-│   │
-│   ├─ menu/
-│   │   └─ page.js
-│   │
-│   ├─ auth.js
-│   ├─ authContext.js
-│   ├─ layout.js
-│   └─ page.js
-│
-├─ public/
-├─ firebase.js
-├─ globals.css
-├─ next.config.mjs
-├─ postcss.config.mjs
-├─ package.json
-└─ README.md
+app/
+about_us/page.js
+
+chef/page.js
+
+components/button.js
+components/chef.js
+components/footer.js
+components/header.js
+components/hero.js
+components/menu1.js
+components/restan_vedio.js
+
+login/page.js
+
+menu/page.js
+
+auth.js
+
+authContext.js
+
+layout.js
+
+page.js
+
+public/
+node_modules/
+
+favicon.ico
+firebase.js
+globals.css
+next.config.mjs
+postcss.config.mjs
+package.json
+package-lock.json
+jsconfig.json
+eslint.config.mjs
+README.md
 
 Screenshots
 <img width="1899" height="913" alt="landing page" src="https://github.com/user-attachments/assets/35e0799c-3532-4f61-b9a9-f0936a4bbae1" />
